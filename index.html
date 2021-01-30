@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header container p-5 m-auto">
+            <h3>Bookmarker</h3>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-body my-3 p-4">
+            <div class=" p-2">
+                <h3>Bookmark your favorite sites</h3>
+            </div>
+           
+            <div class=" m-auto">
+                <p class="p-1">Site Name</p>
+                <input class="form-control m-2" id="Bookmark" placeholder="Bookmark Name" type="text">
+                <lable class="d-none alert alert-danger " id='name-alert'>Name is Required</lable>
+                <lable class="d-none alert alert-danger " id='exist-alert'>this name already exist</lable>
+
+            </div>
+           
+            <div class=" m-auto">
+                <p class="p-1">Site URL</p>
+                <input class="form-control m-2" id="url"placeholder="website URL" type="text">
+                <lable class="d-none alert alert-danger "id='url-alert'>Url Field is required</lable>
+                <lable class="d-none alert alert-danger " id='exist-url-alert'>this url already exist</lable>
+
+            </div>
+         
+            <div class=" m-auto py-4">
+                <button class="btn btn-primary" onclick="addbookmarker()">submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table ">
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="footer container p-5">
+           <p>© 2019 Bookmarker Inc.</p>
+        </div>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
